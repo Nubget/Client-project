@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Summer</title>
+  <LINK href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+
+<!-- Change this code here by copy and pasting your template on line 15 -->
+
+
+<body onload="javascript:hideTable2()">
+<script src="script.js"></script>
+<script src="winter.js"></script>
+<p class="Hail">Winter Services</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button class="win-btn" onclick="displayMowing()">Mowing</button>
+<br>
+<a class="win-btn">Snow removal</a>
+<br>
+<button class="win2-btn" onclick="displayDriveway()">Driveway</button>
+<br>
+<button class="win2-btn" onclick="displaySidewalks()">Sidewalks</button>
+<br>
+<button class="win2-btn" onclick="displayBoth()">Both</button>
+<br>
+<button class="win-btn" onclick="displayParkingLot()">Parking lot</button>
+<br>
+<br>
+<br>
+<a href="index.html" class="btn">Home</a>
+
+<a href="Summer.html" class="btn">Summer</a>
+
+
+<table id="winParkingLot" class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="winDriveway" class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="winSidewalks" class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="winBoth" class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="winMowing" class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+</body>
+</html>

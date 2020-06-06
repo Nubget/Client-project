@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Summer</title>
+  <LINK href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+
+<!-- Change this code here by copy and pasting your template on line 15 -->
+
+
+<body onload="javascript:hideTable()">
+<script src="script.js"></script>
+<script src="summer.js"></script>
+<p class="weeds">Summer Services</p>
+<br>
+<br>
+<button class="sum-btn" onclick="displayFertilization()">Fertilization</button>
+<br>
+<button class="sum-btn" onclick="displayWeedControl()">Weed Control</button>
+<br>
+<button class="sum-btn" onclick="displayPestControl()">Pest Control</button>
+<br>
+<button class="sum-btn" onclick="displayMowing()">Mowing</button>
+<br>
+<button class="sum-btn" onclick="displayEdging()">Edging</button>
+<br>
+<button class="sum-btn" onclick="displayCompleteService()">Complete Service</button>
+<br>
+<br>
+<br>
+<a href="index.html" class="btn">Home</a>
+
+<a href="Winter.html" class="btn">Winter</a>
+
+<table id="sumFertilization"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="sumWeedControl"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="sumPestControl"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="sumMowing"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="sumEdging"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+
+<table id="sumCompleteService"  class="my-table">
+  <tr>
+    <th>Period</th>
+    <th>Price</th>
+  </tr>
+  <tr w3-repeat="Prices">
+    <td>{{Period}}</td>
+    <td>{{Price}}</td>
+  </tr>
+</table>
+</body>
+</html>
